@@ -1,0 +1,85 @@
+<TodoCard>:
+    elevation: 1
+    md_bg_color: 1, 1, 1, 1
+    radius: [8]
+    MDFloatLayout:
+        id: bar
+        size_hint: .01, .9
+        pos_hint: {"center_x": .02, "center_y": .5}
+        md_bg_color: 1, 170/255, 23/255, 1
+    MDLabel:
+        text: "Task 1"
+        markup: True
+        font_name: "Poppins-SemiBold.ttf"
+        font_size: "20sp"
+        size_hint_x: .8
+        pos_hint: {"center_x": .46, "center_y": .8}
+    MDCheckbox:
+        size_hint: None, None
+        size: "48dp", "48dp"
+        unselected_color: 1, 170/255, 23/255, 1
+        selected_color: 0, 179/255, 0, 1
+        pos_hint: {"center_x": .95, "center_y": .8}
+    MDLabel:
+        id: description
+        text: "Buying Fruits"
+        font_name: "Poppins-SemiBold.ttf"
+        markup: True
+        size_hint_x: .9
+        line_height: .8
+        pos_hint: {"center_x": .51, "center_y": .4}
+        
+MDScreen:
+    todo_list: todo_list
+    name: "main"
+    date: date
+    MDFloatLayout:
+        md_bg_color: 1, 1, 1, 1,
+        MDLabel:
+            text: "My Tasks"
+            pos_hint: {"center_x": .56, "center_y": .95}    
+            font_name: "Poppins-SemiBold.ttf"
+            font_size: "35sp"
+        MDLabel:
+            id: date
+            text: ""
+            pos_hint: {"center_x": .565, "center_y": .89}    
+            font_name: "Poppins-Regular.ttf"
+            font_size: "18sp"
+        MDIconButton:
+            icon: "plus"
+            pos_hint: {"center_x": .89, "center_y": .925} 
+            user_font_size: "30sp"
+            md_bg_color: 1, 170/255, 23/255, 1
+            theme_text_color: "Custom"
+            text_color: 1, 1, 1, 1
+            on_release: app.add_todo()
+        ScrollView:
+            do_scroll_x: False
+            do_scroll_y: True
+            size_hint_y: .85
+            pos_hint: {"center_x": .5, "Y": 0}
+            bar_width: 0
+            GridLayout: 
+                id: todo_list
+                cols: 1 
+                height: self.minimum_height
+                row_default_height: 80
+                size_hint_y: None
+                padding: 15, 10
+                spacing: 15, 10
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
