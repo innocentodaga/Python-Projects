@@ -18,7 +18,7 @@ class MainApp(MDApp):
                     ),
                     pos_hint = {"center_x": 0.5, "center_y": 0.5}
                 ),
-                md_bg_color = (1, 1, 1, 1)
+                # md_bg_color = (1, 1, 1, 1)
             )
         )
 # Run the application
