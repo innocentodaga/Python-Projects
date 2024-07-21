@@ -14,7 +14,7 @@ class MainApp(MDApp):
             MDScreen(
                 MDButton(
                     MDButtonText(
-                        text = "Hello, World",
+                        text = "Hello, Ty$0n",
                     ),
                     pos_hint = {"center_x": 0.5, "center_y": 0.5}
                 ),
