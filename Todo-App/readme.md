@@ -19,7 +19,7 @@ A simple ToDo application built using Kivy and KivyMD. This app allows users to 
 1. **Clone the repository:**
 
     ```sh
-    git clone https://github.com/yourusername/todo-app.git
+    git clone https://github.com/innocentodaga/Python-Projects/tree/main/Todo-App.git
     cd todo-app
     ```
 
@@ -38,13 +38,13 @@ A simple ToDo application built using Kivy and KivyMD. This app allows users to 
 
 ## Usage
 
-1. **Run the application:
+1. **Run the application:**
 
     ```sh
     python main.py
     ```
 
-2. **Add ToDo items:
+2. **Add ToDo items:**
 
     - Enter the details of the to-do item in the provided input fields and add it to the list.
 
