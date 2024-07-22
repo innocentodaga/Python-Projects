@@ -4,14 +4,14 @@ from kivy.lang import Builder
 import datetime
 from datetime import date
 from kivymd.uix.floatlayout import MDFloatLayout
-from kivymd.uix.behaviors import FakeRectangularElevationBehavior
+# from kivymd.uix.behaviors import FakeRectangularElevationBehavior
 
 from kivy.core.window import Window
 
 Window.size = (350, 600)
 
 
-class TodoCard(FakeRectangularElevationBehavior, MDFloatLayout):
+class TodoCard(MDFloatLayout):
     pass
 
 

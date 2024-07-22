@@ -10,7 +10,7 @@
     MDLabel:
         text: "Task 1"
         markup: True
-        font_name: "Poppins-SemiBold.ttf"
+        font_name: "./assets/Poppins-SemiBold.ttf"
         font_size: "20sp"
         size_hint_x: .8
         pos_hint: {"center_x": .46, "center_y": .8}
@@ -23,28 +23,28 @@
     MDLabel:
         id: description
         text: "Buying Fruits"
-        font_name: "Poppins-SemiBold.ttf"
+        font_name: "./assets/Poppins-Regular.ttf"
         markup: True
         size_hint_x: .9
         line_height: .8
         pos_hint: {"center_x": .51, "center_y": .4}
-        
+
 MDScreen:
     todo_list: todo_list
     name: "main"
     date: date
     MDFloatLayout:
-        md_bg_color: 1, 1, 1, 1,
+        md_bg_color: 1, 1, 1, 1
         MDLabel:
             text: "My Tasks"
             pos_hint: {"center_x": .56, "center_y": .95}    
-            font_name: "Poppins-SemiBold.ttf"
+            font_name: "./assets/Poppins-SemiBold.ttf"
             font_size: "35sp"
         MDLabel:
             id: date
             text: ""
             pos_hint: {"center_x": .565, "center_y": .89}    
-            font_name: "Poppins-Regular.ttf"
+            font_name: "./assets/Poppins-Regular.ttf"
             font_size: "18sp"
         MDIconButton:
             icon: "plus"
@@ -58,7 +58,7 @@ MDScreen:
             do_scroll_x: False
             do_scroll_y: True
             size_hint_y: .85
-            pos_hint: {"center_x": .5, "Y": 0}
+            pos_hint: {"center_x": .5, "y": 0}
             bar_width: 0
             GridLayout: 
                 id: todo_list
@@ -68,18 +68,3 @@ MDScreen:
                 size_hint_y: None
                 padding: 15, 10
                 spacing: 15, 10
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
