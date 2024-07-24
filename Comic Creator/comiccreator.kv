@@ -6,6 +6,7 @@
             id: tool_box
             size_hint: None, None
             width: 100
+
     AnchorLayout:
         anchor_x: 'right'
         anchor_y: 'top'
@@ -13,6 +14,7 @@
             size_hint: None, None
             width: root.width - tool_box.width
             height: root.height - general_options.height - status_bar.height
+
     AnchorLayout:
         anchor_x: 'center'
         anchor_y: 'bottom'
@@ -22,9 +24,7 @@
                 id: general_options
                 size_hint: 1, None
                 height: 48
-            statusBar:
+            StatusBar:
                 id: status_bar
                 size_hint: 1, None
                 height: 24
-
-
