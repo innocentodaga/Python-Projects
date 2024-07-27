@@ -4,6 +4,8 @@
         anchor_y: 'top'
         ToolBox:
             id: tool_box
+            drawing_space: drawing_space
+            comic_creator: root
             size_hint: None, None
             width: 100
 
@@ -11,6 +13,10 @@
         anchor_x: 'right'
         anchor_y: 'top'
         DrawingSpace:
+            id: drawing_space
+            status_bar: status_bar
+            general_options: general_options
+            tool_box: tool_box
             size_hint: None, None
             width: root.width - tool_box.width
             height: root.height - general_options.height - status_bar.height
@@ -22,6 +28,8 @@
             orientation: 'vertical'
             GeneralOptions:
                 id: general_options
+                drawing_space: drawing_space
+                comic_creator: root
                 size_hint: 1, None
                 height: 48
             StatusBar:

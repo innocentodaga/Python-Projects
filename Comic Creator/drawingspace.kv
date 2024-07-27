@@ -1,4 +1,9 @@
-<DrawingSpace@RelativeLayout>:
-    Label:
-        markup:True
-        text: 'The Comic Creator'
+<DrawingSpace @RelativeLayout>:
+    StickMan:
+        pos_hint: {'center_x': .5, 'center_y': .5}
+        canvas.before:
+            Translate:
+                xy: -self.width/2, -self.height/2
+            Scale:
+                xyz: 2,2,0
+    StickMan:

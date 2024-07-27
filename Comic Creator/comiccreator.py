@@ -6,6 +6,7 @@ Builder.load_file('toolbox.kv')
 Builder.load_file('drawingspace.kv')
 Builder.load_file('generaloptions.kv')
 Builder.load_file('statusbar.kv')
+Builder.load_file('comicwidgets.kv')
 
 class ComicCreator(AnchorLayout):
     pass

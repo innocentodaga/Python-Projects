@@ -1,0 +1,26 @@
+<DrawingSpace>:
+    pos_hint: {'x':.5, 'y':.5}
+    canvas:
+        Rectangle:
+            source: 'kivy.png'
+        Rotate:
+            angle: 90
+            axis: 0,0,1
+        Color:
+            rgb: 1,0,0 # Red color
+        Rectangle:
+            source: 'kivy.png'
+        Translate:
+            x: -100
+        Color:
+            rgb: 0,1,0 # Green color
+        Rectangle:
+            source: 'kivy.png'
+        Translate:
+            y: -100
+        Scale:
+            xyz:(.5,.5,0)
+        Color:
+            rgb: 0,0,1 # Blue color
+        Rectangle:
+            source: 'kivy.png'

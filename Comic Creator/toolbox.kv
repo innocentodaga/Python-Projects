@@ -2,14 +2,25 @@
     size_hint: None, None
     size: 48, 48
     group: 'tool'
+    canvas:
+        PushMatrix:
+        Translate:
+            xy: self.x, self.y
+    canvas.after:
+        PopMatrix:
 
 <ToolBox@GridLayout>:
     cols: 2
     padding: 2
     ToolButton:
-        text: 'O'
+        canvas:
+            Line:
+                circle: 24, 24, 14
     ToolButton:
-        text: '/'
+        canvas:
+            Line:
+                points: 10, 10, 38, 38
     ToolButton:
-        text: '?'
+        StickMan:
+            pos_hint: {'center_x': .5, 'center_y': .5}
 
