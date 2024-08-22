@@ -1,7 +1,7 @@
 import pdfkit
 
 # URL of the webpage you want to convert
-url = "https://www.thesitetoturntopdf.com"
+url = "https://www.google.com"
 
 # Output PDF file
 output_pdf = "output.pdf"
